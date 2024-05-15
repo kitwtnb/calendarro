@@ -154,7 +154,7 @@ class CalendarroState extends State<Calendarro> {
   void setCurrentDate(DateTime date) {
     setState(() {
       int page = widget.getPageForDate(date);
-      pageView?.controller.jumpToPage(page);
+      pageView?.controller?.jumpToPage(page);
     });
   }
 
